@@ -76,6 +76,7 @@ public class ObjectProviderDemo { // @Configuration 是非必须注解
 
     private static void lookupByObjectProvider(AnnotationConfigApplicationContext applicationContext) {
         ObjectProvider<String> objectProvider = applicationContext.getBeanProvider(String.class);
-        System.out.println(objectProvider.getObject());
+        System.out.println("lookupByObjectProvider: " + objectProvider.getObject());
+
     }
 }
